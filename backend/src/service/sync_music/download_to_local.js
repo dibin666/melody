@@ -59,6 +59,6 @@ function buildDestFilename(globalConfig, songInfo, playlistName) {
         .replace(/{playlistName}/g, playlistName ? playlistName : 'UnknownPlayList')
         .replace(/{album}/g, songInfo.album ? songInfo.album : 'Unknown');
     // remove the head / and \ in filename
-    filename = filename.replace(/^[\/\\]+/, '') + '.mp3';
+    filename = filename.replace(/^[\/\\]+/, '') + '.flac';
     return `${downloadPath}${libPath.sep}${filename}`
 }
